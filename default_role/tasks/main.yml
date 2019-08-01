@@ -1,0 +1,10 @@
+---
+- name: "Installing Basic Tools"
+  package: pkg={{ item }} state=present
+  with_items:
+  - git
+  - vim
+  - unzip
+  - wget
+
+# tasks file for default_role
